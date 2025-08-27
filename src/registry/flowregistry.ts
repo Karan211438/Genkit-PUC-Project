@@ -1,7 +1,6 @@
-import { AdditionFlow ,MultiplicationFlow,SubtractionFlow,execute_retrieve_query} from "../flows/flow.js";
+import {NormalChatFlow,getPluginTraceLogFilter,RetrieveEntityMetadataFlow} from "../chatflows/flow.js";
 export const flowRegistry = {
-  addition: AdditionFlow,
-  subtraction: SubtractionFlow,
-  multiplication: MultiplicationFlow,
-  execute_retrieve_query: execute_retrieve_query, 
+  getPluginTraceLogFilter:getPluginTraceLogFilter,
+  retrieveEntityMetadata:RetrieveEntityMetadataFlow,
+  unknown:NormalChatFlow,
 };

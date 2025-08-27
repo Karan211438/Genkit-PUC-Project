@@ -1,10 +1,7 @@
 import express from "express";
-import { DispatcherFlow } from "../flows/dispatcherflow.js";
-import {DispatcherFlowcrm }from "../flows/crudopreationdispatcherflow.js";
-
+import { DispatcherFlow } from "../chatflows/dispatcherflow.js";
 const router = express.Router();
-
-router.post("/math", async (req, res) => {
+router.post("/chat", async (req, res) => {
   try {
     const input = req.body;
     const result = await DispatcherFlow(input);
