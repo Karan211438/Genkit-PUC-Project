@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "@genkit-ai/googleai": "^1.16.0",
+    "axios": "^1.11.0",
     "dotenv": "^17.2.1",
     "genkit": "^1.16.0"
   },
@@ -11,6 +12,7 @@
     "start": "node dist/index.js"
   },
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
